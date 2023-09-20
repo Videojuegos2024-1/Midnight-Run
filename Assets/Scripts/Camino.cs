@@ -8,11 +8,10 @@ public class Camino : MonoBehaviour
 
     public float speed;
 
-    // Start is called before the first frame update
-
     // Update is called once per frame
     void Update()
     {
+        speed += (float).1 * Time.deltaTime;
         this.transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 }
