@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 639319310}
   m_Layer: 0
   m_Name: LeftScenario1
-  m_TagString: Obstaculo
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e26dfcb9416292aeae5b7753626dc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -15
+  speed: -20
 --- !u!1001 &4047185322000564133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -583,27 +583,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 5.2376
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 5.2376
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 5.2376
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1017303
+      value: -1.9155
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 89.39152
+      value: 89.5
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -130.72812
+      value: -130.83
       objectReference: {fileID: 0}
     - target: {fileID: 1380918412539705202, guid: a1693ae0c46d27742a69379223ec91e0, type: 3}
       propertyPath: m_LocalRotation.w
