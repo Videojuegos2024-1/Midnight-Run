@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class ScenarioDeleter : MonoBehaviour
 {
-    //public GameObject stages
+    private void OnTriggerEnter(Collider other){
+        if(other.gameObject.tag == "Stage")
+            Destroy(other.gameObject, 10.0f);
+    }
 }

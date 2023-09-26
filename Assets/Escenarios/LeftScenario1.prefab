@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4047185323837714681}
   - component: {fileID: 639319310}
+  - component: {fileID: 155755562}
   m_Layer: 0
   m_Name: LeftScenario1
   m_TagString: Stage
@@ -150,6 +151,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -20
+--- !u!65 &155755562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4047185323837714680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: -46, y: 90, z: -118}
 --- !u!1001 &4047185322000564133
 PrefabInstance:
   m_ObjectHideFlags: 0

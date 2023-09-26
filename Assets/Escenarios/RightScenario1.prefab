@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2307254969060388556}
   - component: {fileID: 5016675868535954329}
   - component: {fileID: 5517771087180472835}
+  - component: {fileID: 2125453780}
   m_Layer: 0
   m_Name: RightScenario1
   m_TagString: Stage
@@ -118,6 +119,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -20
+--- !u!65 &2125453780
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525030635584283708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &750676360766326372
 PrefabInstance:
   m_ObjectHideFlags: 0
