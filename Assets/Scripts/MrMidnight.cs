@@ -31,7 +31,7 @@ public class MrMidnight : MonoBehaviour
     {
         hm = Input.GetAxis("Horizontal");
         print(isGrounded);
-        this.transform.Translate(Time.deltaTime * speed * hm, 0, 0);
+        this.transform.Translate(Time.deltaTime * speed * hm * 1.3f, 0, 0);
 
         if(Input.GetKeyDown("space") && isGrounded)
         {

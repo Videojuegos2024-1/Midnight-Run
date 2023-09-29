@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 391938726}
 --- !u!1 &598560264
 GameObject:
@@ -91,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 598560264}
 --- !u!1 &641094256
 GameObject:
@@ -137,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 641094256}
 --- !u!1 &932982239
 GameObject:
@@ -183,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 932982239}
 --- !u!1 &1765227688
 GameObject:
@@ -229,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 1765227688}
 --- !u!1 &1932525241
 GameObject:
@@ -275,6 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 1932525241}
 --- !u!1 &707131829731635187
 GameObject:
@@ -321,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 707131829731635187}
 --- !u!1 &993811997969977271
 GameObject:
@@ -737,6 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 1946726007841536955}
 --- !u!1 &2078931157694028687
 GameObject:
@@ -979,6 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 3038781474003287793}
 --- !u!1 &3171924983613296601
 GameObject:
@@ -2493,8 +2502,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6492668538719612780}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -109.01, y: 2.3, z: 11.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -109.01, y: 0.05, z: 11.1}
+  m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4372257946342722358}
@@ -2698,7 +2707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7455771561129044356}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -17.25, y: 1, z: 10.59}
+  m_LocalPosition: {x: -17.25, y: 0.05, z: 10.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2766,6 +2775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1483506528677888, guid: 1e53ab99435b1194a83bb713baff0dd1, type: 3}
+  rotation: 0
   spawnLocation: {fileID: 7893126142391624257}
 --- !u!1 &8046683174906020430
 GameObject:

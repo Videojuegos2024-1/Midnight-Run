@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     
     public GameObject enemy;
+    public int rotation;
     public GameObject spawnLocation;
     int s;
 
