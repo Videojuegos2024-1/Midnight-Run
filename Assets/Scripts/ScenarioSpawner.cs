@@ -12,7 +12,8 @@ public class ScenarioSpawner : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         s = Random.Range(0, stage.Length);
+        GameObject selectedStage = stage[s];
         if (other.gameObject.tag == "Stage")
-            Instantiate(stage[s], spawn.position, director.rotation);
+            Instantiate(selectedStage, spawn.position, director.rotation);
     }
 }
