@@ -9,7 +9,8 @@ public class MrMidnight : MonoBehaviour
     private bool isGrounded;
     public Rigidbody rb;
     public Vector3 jump;
-    public float jumpForce = 2.0f; 
+    public float jumpForce = 2.0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,9 @@ public class MrMidnight : MonoBehaviour
         }
 
     }
+    
+       
+    
 
 }
 
