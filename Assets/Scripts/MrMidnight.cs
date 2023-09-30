@@ -22,9 +22,10 @@ public class MrMidnight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        screen.SetActive(false);
         fairies = 0;
         puntaje = 0;
-        vidas = 7;
+        vidas = 2;
         rb = GetComponent<Rigidbody>();
         speed = 10;
         jump = new Vector3(0.0f, 2.0f, 0.0f);
