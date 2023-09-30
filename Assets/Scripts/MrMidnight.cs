@@ -23,6 +23,7 @@ public class MrMidnight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.transform.position = new Vector3(21.77f, 0.0f, -4.0f);
         screen.SetActive(false);
         fairies = 0;
         puntaje = 0;

@@ -1030,53 +1030,6 @@ Transform:
   m_Father: {fileID: 628077385}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &277036252
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 277036253}
-  - component: {fileID: 277036254}
-  m_Layer: 0
-  m_Name: FairySpawn2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &277036253
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277036252}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -280.3, y: 0.15, z: 5.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1203773241}
-  m_RootOrder: 41
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &277036254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277036252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f9d87e1f6f4dfdfb7abc981b772075, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 100116, guid: cb2a63aa7e6bbda4b8127e31c18ef3e9, type: 3}
-  spawnLocation: {fileID: 277036252}
-  spawnChance: 40
 --- !u!1 &278489663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3254,53 +3207,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4201335467154764, guid: 39f905046dc03414f8baad7aa032a723, type: 3}
   m_PrefabInstance: {fileID: 396275338}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1036418515
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1036418516}
-  - component: {fileID: 1036418517}
-  m_Layer: 0
-  m_Name: FairySpawn1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1036418516
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036418515}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -96.45, y: 0.15, z: 10.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1203773241}
-  m_RootOrder: 40
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1036418517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036418515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f9d87e1f6f4dfdfb7abc981b772075, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 100116, guid: cb2a63aa7e6bbda4b8127e31c18ef3e9, type: 3}
-  spawnLocation: {fileID: 1036418515}
-  spawnChance: 30
 --- !u!1001 &1039306582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3589,11 +3495,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8772670f7f8e9478fa577f8630b365, type: 3}
---- !u!4 &1203773241 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4372257946342722358, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-  m_PrefabInstance: {fileID: 4372257946035263986}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1210431025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6633,46 +6534,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 391938728, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 598560266, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 641094258, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 932982241, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 1765227690, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932525243, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 1562751461856429634, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 2810753382253680680, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
     - target: {fileID: 3193918585805095146, guid: bde80b263e3993d5e912df7278ede509, type: 3}
       propertyPath: director
       value: 
       objectReference: {fileID: 474176021}
-    - target: {fileID: 3924510987700608342, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
-      objectReference: {fileID: 0}
     - target: {fileID: 4372257946342722353, guid: bde80b263e3993d5e912df7278ede509, type: 3}
       propertyPath: m_Name
       value: Camino
@@ -6720,10 +6585,6 @@ PrefabInstance:
     - target: {fileID: 4372257946342722358, guid: bde80b263e3993d5e912df7278ede509, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5241022349023055325, guid: bde80b263e3993d5e912df7278ede509, type: 3}
-      propertyPath: spawnChance
-      value: 85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde80b263e3993d5e912df7278ede509, type: 3}
