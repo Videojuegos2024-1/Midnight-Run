@@ -1920,8 +1920,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 400108}
   m_AABB:
-    m_Center: {x: 0.12741873, y: -0.06516683, z: 0.0000015497208}
-    m_Extent: {x: 1.1244704, y: 0.2736126, z: 0.65227044}
+    m_Center: {x: 0.20348752, y: -0.06516683, z: 0.042662382}
+    m_Extent: {x: 1.2729632, y: 0.2736126, z: 0.7803581}
   m_DirtyAABB: 0
 --- !u!1 &100114
 GameObject:
@@ -1967,9 +1967,10 @@ GameObject:
   - component: {fileID: 400116}
   - component: {fileID: 14300000}
   - component: {fileID: 11100000}
+  - component: {fileID: 2078712450134367702}
   m_Layer: 0
   m_Name: HuaYao_01
-  m_TagString: Untagged
+  m_TagString: Fairy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1983,8 +1984,8 @@ Transform:
   m_GameObject: {fileID: 100116}
   m_LocalRotation: {x: 0, y: -0.1040758, z: 0, w: -0.99456936}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.91620976, y: 0.9162095, z: 0.9162095}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 400114}
   - {fileID: 400112}
@@ -2033,3 +2034,16 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &2078712450134367702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e26dfcb9416292aeae5b7753626dc24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40

@@ -6,14 +6,14 @@ public class EnemySpawner : MonoBehaviour
 {
     
     public GameObject enemy;
-    public int rotation;
     public GameObject spawnLocation;
     int s;
+    public int spawnChance = 0;
 
     void Start()
     {
         s = Random.Range(0, 100);
-        if(s >= 25){
+        if(s >= (100-spawnChance)){
             Instantiate(enemy, spawnLocation.transform.position, spawnLocation.transform.rotation);
         }
     }

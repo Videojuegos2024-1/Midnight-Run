@@ -12,11 +12,15 @@ public class MrMidnight : MonoBehaviour
     public float jumpForce = 2.0f;
     private int vidas;
     public GameObject screen;
+    private int puntaje;
+    private int fairies;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        fairies = 0;
+        puntaje = 0;
         vidas = 7;
         rb = GetComponent<Rigidbody>();
         speed = 10;
@@ -36,6 +40,8 @@ public class MrMidnight : MonoBehaviour
         hm = Input.GetAxis("Horizontal");
         print(isGrounded);
         this.transform.Translate(Time.deltaTime * speed * hm * 1.3f, 0, 0);
+        print(puntaje);
+        print(fairies);
 
         if(Input.GetKeyDown("space") && isGrounded)
         {
@@ -49,10 +55,21 @@ public class MrMidnight : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Enemy":
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject, 0f);
                 vidas--;
                 if(vidas == 0)
                     screen.SetActive(true);
+                break;
+            case "Fairy":
+                Destroy(collision.gameObject, 0f);
+                puntaje += 500;
+                if(fairies == 3){
+                    vidas++;
+                    fairies = 0;
+                }
+                else{
+                    fairies++;
+                }
                 break;
             default:
                 break;
