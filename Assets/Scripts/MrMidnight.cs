@@ -26,7 +26,7 @@ public class MrMidnight : MonoBehaviour
         screen.SetActive(false);
         fairies = 0;
         puntaje = 0;
-        vidas = 2;
+        vidas = 7;
         rb = GetComponent<Rigidbody>();
         speed = 10;
         jump = new Vector3(0.0f, 2.0f, 0.0f);
@@ -40,6 +40,14 @@ public class MrMidnight : MonoBehaviour
         isGrounded = false;
     }
 
+    public void incrementarPuntaje(int amount){
+        puntaje += amount;
+    }
+
+    public void sendLives(GameObject asker){
+        asker.SendMessage("vidasIniciales", vidas);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -51,9 +59,8 @@ public class MrMidnight : MonoBehaviour
         this.transform.position = newPos;
         hm = Input.GetAxis("Horizontal");
         puntaje += .001f;
-        this.transform.Translate(Time.deltaTime * speed * hm * 1.3f, 0, 0);
+        this.transform.Translate(Time.deltaTime * speed * hm * 1.5f, 0, 0);
         print("Puntaje " + puntaje);
-        print("Vidas " + vidas);
         //print("Hadas " + fairies);
         if(Input.GetKeyDown("space") && isGrounded)
         {
@@ -67,9 +74,10 @@ public class MrMidnight : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Enemy":
+                print("Vidas " + vidas);
                 Destroy(collision.gameObject, 0f);
                 vidas--;
-                if(vidas == 0)
+                if(vidas <= 0)
                     screen.SetActive(true);
                 break;
             case "Fairy":

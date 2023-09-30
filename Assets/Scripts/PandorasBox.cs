@@ -7,11 +7,12 @@ public class PandorasBox : MonoBehaviour
 
     public GameObject objectManager;
     public GameObject[] enemies;
+    public GameObject michi;
 
     // Start is called before the first frame update
     void Start()
     {
-        //objectManager = GameObject.Find("ObjectManager");
+        GameObject.Find("MrMidnight");
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
@@ -23,11 +24,11 @@ public class PandorasBox : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
+        if (collision.gameObject.tag == "Player"){
             foreach (var enem in enemies){
                 Destroy(enem);
             }
+            michi.SendMessage("incrementarPuntaje", enemies.Length);
             Destroy(this.gameObject);
         }
     }

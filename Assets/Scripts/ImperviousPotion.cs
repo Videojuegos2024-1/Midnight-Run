@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class ImperviousPotion : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    public GameObject michi;
+    public int vidasTemp;
+    void Start(){
+        vidasTemp = 0;
+        GameObject.Find("MrMidnight");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void vidasIniciales(int vidasActuales){
+        vidasTemp = vidasActuales;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
+        if (collision.gameObject.tag == "Player"){
             Destroy(this.gameObject);
         }
     }
+
+    IEnumerator imperviousness(){
+        yield return new WaitForSeconds(10.0f);
+    }
+
 }
