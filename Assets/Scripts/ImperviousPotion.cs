@@ -8,8 +8,8 @@ public class ImperviousPotion : MonoBehaviour
     public GameObject michi;
     public int vidasTemp;
     void Start(){
+        michi = GameObject.FindWithTag("Player");
         vidasTemp = 0;
-        GameObject.Find("MrMidnight");
     }
 
     public void vidasIniciales(int vidasActuales){
@@ -19,14 +19,8 @@ public class ImperviousPotion : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player"){
-            Destroy(this.gameObject);
+            michi.SendMessage("incrementarVidas");
         }
-    }
-
-    IEnumerator imperviousness(){
-        michi.SendMessage("actualizarVidas", vidasTemp + 20);
-        yield return new WaitForSeconds(10.0f);
-        michi.SendMessage("actualizarVidas", vidasTemp);
     }
 
 }

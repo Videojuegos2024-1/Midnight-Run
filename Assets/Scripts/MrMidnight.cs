@@ -23,7 +23,7 @@ public class MrMidnight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.transform.position = new Vector3(21.77f, 0.0f, -4.0f);
+        this.transform.position = new Vector3(21.77f, 0.0f, -4.5f);
         screen.SetActive(false);
         fairies = 0;
         puntaje = 0;
@@ -45,13 +45,17 @@ public class MrMidnight : MonoBehaviour
         puntaje += amount;
     }
 
-    public void sendLives(GameObject asker){
-        asker.SendMessage("vidasIniciales", vidas);
+    public void incrementarVidas(){
+        StartCoroutine(imperviousness());
     }
 
-    public void actualizarVidas(int nuevasVidas){
-        vidas = nuevasVidas;
+    IEnumerator imperviousness(){
+        int temp = vidas;
+        vidas += 20;
+        yield return new WaitForSeconds(10.0f);
+        vidas = temp;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -82,6 +86,7 @@ public class MrMidnight : MonoBehaviour
                 print("Vidas " + vidas);
                 Destroy(collision.gameObject, 0f);
                 vidas--;
+                puntaje += 0.1f;
                 if(vidas <= 0)
                     screen.SetActive(true);
                 break;

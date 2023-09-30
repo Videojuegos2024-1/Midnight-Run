@@ -12,7 +12,7 @@ public class PandorasBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("MrMidnight");
+        michi = GameObject.FindWithTag("Player");
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
