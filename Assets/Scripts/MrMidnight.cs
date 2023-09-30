@@ -14,6 +14,9 @@ public class MrMidnight : MonoBehaviour
     public GameObject screen;
     private int puntaje;
     private int fairies;
+    private float x;
+    private float y;
+    Vector3 newPos;
     
 
     // Start is called before the first frame update
@@ -37,12 +40,16 @@ public class MrMidnight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        x = this.transform.position.x;
+        y = this.transform.position.y;
+        newPos = new Vector3(x, y, 0);
+        this.transform.position = newPos;
         hm = Input.GetAxis("Horizontal");
         print(isGrounded);
         this.transform.Translate(Time.deltaTime * speed * hm * 1.3f, 0, 0);
         print(puntaje);
+        print(vidas);
         print(fairies);
-
         if(Input.GetKeyDown("space") && isGrounded)
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
