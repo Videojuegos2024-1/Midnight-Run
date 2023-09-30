@@ -2018,7 +2018,7 @@ Animation:
   m_GameObject: {fileID: 100116}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ee1260ce51284984daef2174f923b024, type: 3}
+  m_Animation: {fileID: 7400000, guid: d3b0fd919cb7d524f87018d72b39a6fe, type: 3}
   m_Animations:
   - {fileID: 7400000, guid: 2e6a794b99f7ebc4b83fe8b4ad59fad5, type: 3}
   - {fileID: 7400000, guid: bcac86237a3bdfd4196b3ace9e0afea5, type: 3}

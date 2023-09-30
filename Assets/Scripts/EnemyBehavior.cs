@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public GameObject screen;
 
     // Start is called before the first frame update
 
@@ -13,12 +12,5 @@ public class EnemyBehavior : MonoBehaviour
     {
         speed += (float).1 * Time.deltaTime;
         this.transform.Translate(0, 0, speed * Time.deltaTime);
-    }
-
-    private void OnCollisionEnter(Collision collision){
-        if(collision.gameObject.tag == "Player"){
-            Destroy(collision.gameObject);
-            screen.SetActive(true);
-        }
     }
 }

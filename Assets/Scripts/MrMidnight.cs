@@ -10,11 +10,14 @@ public class MrMidnight : MonoBehaviour
     public Rigidbody rb;
     public Vector3 jump;
     public float jumpForce = 2.0f;
+    private int vidas;
+    public GameObject screen;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        vidas = 7;
         rb = GetComponent<Rigidbody>();
         speed = 10;
         jump = new Vector3(0.0f, 2.0f, 0.0f);
@@ -40,9 +43,22 @@ public class MrMidnight : MonoBehaviour
         }
 
     }
-    
-       
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Enemy":
+                Destroy(collision.gameObject);
+                vidas--;
+                if(vidas == 0)
+                    screen.SetActive(true);
+                break;
+            default:
+                break;
+        }
+    }
+
 
 }
 
