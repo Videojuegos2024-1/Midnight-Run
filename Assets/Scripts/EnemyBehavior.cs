@@ -17,8 +17,8 @@ public class EnemyBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision){
         if(collision.gameObject.tag == "Player"){
-            screen.SetActive(true);
             Destroy(collision.gameObject);
+            screen.SetActive(true);
         }
     }
 }
