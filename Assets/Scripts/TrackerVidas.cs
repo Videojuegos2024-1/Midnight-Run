@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Tracker : MonoBehaviour{
-
+public class TrackerVidas : MonoBehaviour
+{
     public int contador;
     public TMP_Text tmp;
-    
-    void Start(){
-        contador = 0;
+    void Start()
+    {
+        contador = 7;
     }
 
-    public void actualizarPuntaje(float puntaje){
-        contador = (int) (puntaje * 10);
+    public void actualizarVidas(int vidas)
+    {
+        contador = vidas;
         tmp.text = contador + "";
     }
-    
-    
 }

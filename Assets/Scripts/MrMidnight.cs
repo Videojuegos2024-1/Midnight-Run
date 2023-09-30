@@ -12,12 +12,13 @@ public class MrMidnight : MonoBehaviour
     public float jumpForce = 2.0f;
     private int vidas;
     public GameObject screen;
-    private int puntaje;
+    private float puntaje;
     private int fairies;
     private float x;
     private float y;
     Vector3 newPos;
-    
+    public GameObject trackerPuntaje;
+    public GameObject trackerVidas;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class MrMidnight : MonoBehaviour
         jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
 
+
     void OnCollisionStay(){
         isGrounded = true;
     }
@@ -41,16 +43,18 @@ public class MrMidnight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        trackerPuntaje.SendMessage("actualizarPuntaje", puntaje);
+        trackerVidas.SendMessage("actualizarVidas", vidas);
         x = this.transform.position.x;
         y = this.transform.position.y;
         newPos = new Vector3(x, y, 0);
         this.transform.position = newPos;
         hm = Input.GetAxis("Horizontal");
-        print(isGrounded);
+        puntaje += .001f;
         this.transform.Translate(Time.deltaTime * speed * hm * 1.3f, 0, 0);
-        print(puntaje);
-        print(vidas);
-        print(fairies);
+        print("Puntaje " + puntaje);
+        print("Vidas " + vidas);
+        //print("Hadas " + fairies);
         if(Input.GetKeyDown("space") && isGrounded)
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
@@ -70,7 +74,7 @@ public class MrMidnight : MonoBehaviour
                 break;
             case "Fairy":
                 Destroy(collision.gameObject, 0f);
-                puntaje += 500;
+                puntaje += 5;
                 if(fairies == 3){
                     vidas++;
                     fairies = 0;
