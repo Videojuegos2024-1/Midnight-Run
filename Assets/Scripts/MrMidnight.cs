@@ -42,7 +42,7 @@ public class MrMidnight : MonoBehaviour
     }
 
     public void incrementarPuntaje(int amount){
-        puntaje += amount;
+        puntaje += (amount * .1f);
     }
 
     public void incrementarVidas(){

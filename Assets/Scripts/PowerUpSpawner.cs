@@ -10,7 +10,7 @@ public class PowerUpSpawner : MonoBehaviour
     
     void Start(){
         s = Random.Range(0, 10);
-        if(s < 3){
+        if(s < 2){
             s = Random.Range(0, 10);
             if(s < 5){
                 Instantiate(powerup[0], spawnLocation.transform.position, spawnLocation.transform.rotation);

@@ -947,7 +947,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20e291e42abe51d0ac40c4aa35e91c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 1126106909858450}
   speed: 20
 --- !u!65 &2192300434385423477
 BoxCollider:
@@ -1093,8 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20e291e42abe51d0ac40c4aa35e91c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 1484008710301926806, guid: c46a3d3392b15f64ebedb40dda3b2a2b, type: 3}
-  speed: 35
+  speed: 40
 --- !u!1 &1524796237129546
 GameObject:
   m_ObjectHideFlags: 0
