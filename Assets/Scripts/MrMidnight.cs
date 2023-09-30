@@ -48,6 +48,10 @@ public class MrMidnight : MonoBehaviour
         asker.SendMessage("vidasIniciales", vidas);
     }
 
+    public void actualizarVidas(int nuevasVidas){
+        vidas = nuevasVidas;
+    }
+
     // Update is called once per frame
     void Update()
     {

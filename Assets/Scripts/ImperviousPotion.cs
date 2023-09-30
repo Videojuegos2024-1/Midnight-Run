@@ -24,7 +24,9 @@ public class ImperviousPotion : MonoBehaviour
     }
 
     IEnumerator imperviousness(){
+        michi.SendMessage("actualizarVidas", vidasTemp + 20);
         yield return new WaitForSeconds(10.0f);
+        michi.SendMessage("actualizarVidas", vidasTemp);
     }
 
 }
