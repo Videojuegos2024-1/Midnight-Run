@@ -53,7 +53,11 @@ public class MrMidnight : MonoBehaviour
         int temp = vidas;
         vidas += 20;
         yield return new WaitForSeconds(10.0f);
-        vidas = temp;
+        if(temp < 5){
+            vidas = 5;
+        }else{
+            vidas = temp;
+        }
     }
 
 
@@ -92,7 +96,7 @@ public class MrMidnight : MonoBehaviour
                 break;
             case "Fairy":
                 Destroy(collision.gameObject, 0f);
-                puntaje += 5;
+                puntaje += 10;
                 if(fairies == 3){
                     vidas++;
                     fairies = 0;
